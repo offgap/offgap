@@ -1,1 +1,0 @@
-import{u as n,r as p,t as c}from"./index-Huav16-7.js";const i=t=>Math.ceil(t/c),S=(t=>({request:r})=>{const{status:a}=n.getState(),{pathname:o}=new URL(r.url),s=i(a);if(t){const e=`/app/domain/${t[s].path}/`;if(o!==e)return p(e)}return{routes:t?.map(e=>e.path),step:s}});export{S as domainStep,i as statusToStep};
