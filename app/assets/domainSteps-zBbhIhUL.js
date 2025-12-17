@@ -1,0 +1,1 @@
+import{u as a,r as p}from"./index-BL118Kam.js";const c=t=>t<2?t:t<8?2:3,m=(t=>({request:o})=>{const{status:n}=a.getState(),{pathname:s}=new URL(o.url),r=c(n);if(t){const e=`/app/domain/${t[r].path}/`;if(s!==e)return p(e)}return{routes:t?.map(e=>e.path),step:r}});export{m as domainStep,c as statusToStep};
